@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{E4842C61-8F99-815D-0934-984CF01B50F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_3;UNITY_5_4;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Infinite Runner\Editor\Game\StaticDataInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\AppearanceProbabilityInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\AppearanceRulesInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\CollidableAppearanceRulesInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\DistanceValueListInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\InfiniteObjectGeneratorInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\InfiniteObjectPersistenceEditor.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\PlatformAppearanceRulesInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\PlatformPlacementRuleInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\PowerUpAppearanceRulesInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\SceneAppearanceRulesInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteGenerator\SectionSelectionInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteObjects\CoinObjectInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteObjects\CollidableObjectInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteObjects\InfiniteObjectInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteObjects\MovingObstacleObjectInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteObjects\ObstacleObjectInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteObjects\PlatformObjectInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteObjects\PowerUpObjectInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\InfiniteObjects\SceneObjectInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Editor\Player\PlayerControllerInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\ComponentSelector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\NGUITransformInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UIAtlasInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UIDrawCallInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UIFilledSpriteInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UIFontInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UIImageButtonInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UILabelInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UIPopupListInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UIScrollBarInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UISettings.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UISlicedSpriteInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UISliderInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UISpriteInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UITextureInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UITiledSpriteInspector.cs" />
+     <Compile Include="Assets\Infinite Runner\Third Party\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
+     <None Include="Assets\Infinite Runner\Third Party\NGUI\Resources\Shaders\Depth.shader" />
+     <None Include="Assets\Infinite Runner\Third Party\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\Infinite Runner\Third Party\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
+     <None Include="Assets\Infinite Runner\Shaders\Diffuse Curve Alpha Blend.shader" />
+     <None Include="Assets\Infinite Runner\Shaders\Diffuse Curve Additive.shader" />
+     <None Include="Assets\Infinite Runner\Third Party\NGUI\ReadMe.txt" />
+     <None Include="Assets\Infinite Runner\Third Party\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\Infinite Runner\Shaders\Diffuse Curve.shader" />
+     <None Include="Assets\Infinite Runner\Third Party\NGUI\Resources\Shaders\Unlit - Transparent Colored (HardClip).shader" />
+     <None Include="Assets\Infinite Runner\Third Party\NGUI\Resources\Shaders\Unlit - Transparent Colored Overlay.shader" />
+     <None Include="Assets\Infinite Runner\Third Party\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
+     <None Include="Assets\Infinite Runner\Shaders\Transparent Cutout.shader" />
+     <None Include="Assets\DB\Models\Animation.txt" />
+     <None Include="Assets\Infinite Runner\Third Party\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\Infinite Runner\Third Party\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="NGUI_Editor">
+ <HintPath>/Users/wanghaiwei/Documents/Code4Fun/unity/AgumonUnity/Assets/Infinite Runner/Third Party/NGUI/DLLs/Editor/NGUI_Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="NGUI">
+ <HintPath>/Users/wanghaiwei/Documents/Code4Fun/unity/AgumonUnity/Assets/Infinite Runner/Third Party/NGUI/DLLs/NGUI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{7DB6218D-246F-614E-B44C-06D06C1C436C}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
